@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toko Teko | Premium Black Tea</title>
+    
+    <meta name="description" content="Toko Teko – Premium Black Tea organik dari perkebunan terbaik Indonesia.">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div id="lightbox" class="lightbox">
+        <span class="close-lightbox">&times;</span>
+        <img class="lightbox-content" id="lightboxImage">
+    </div>
+
+    <div id="purchaseModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <i class="fas fa-cart-arrow-down modal-icon"></i>
+            <h3 id="modalProductName"></h3>
+            <p>Produk telah dimasukkan ke dalam keranjang. Lanjutkan ke halaman Checkout (Simulasi).</p>
+            <a href="https://wa.me/6281222177060?text=Halo%20Toko%20Teko,%20saya%20ingin%20order%20Black%20Tea" class="cta-button primary" style="width: 100%; text-align: center; margin-top: 15px;">
+                Checkout Sekarang
+            </a>
+        </div>
+    </div>
+
+    <header class="header-transparent">
+        <nav class="container">
+            <div class="logo">Toko Teko</div>
+            <ul>
+                <li><a href="#produk">Produk</a></li>
+                <li><a href="#sejarah">Tentang</a></li>
+                <li><a href="#galeri">Galeri</a></li>
+                <li><a href="https://wa.me/6281222177060" class="nav-cta">Pesan Sekarang</a></li>
+            </ul>
+            <div class="menu-toggle"><i class="fas fa-bars"></i></div>
+        </nav>
+    </header>
+
+    <section id="hero" class="hero-section">
+        <div class="video-container">
+            <video autoplay loop muted playsinline poster="images/hero-poster.jpg">
+                <source src="https://assets.mixkit.co/videos/preview/mixkit-tea-plantation-landscape-2415-large.mp4" type="video/mp4">
+            </video>
+            <div class="overlay"></div>
+        </div>
+        <div class="hero-content container" data-aos="fade-up">
+            <h1>Toko Teko</h1>
+            <h2>Premium Black Tea - Keaslian Rasa Teh Organik Indonesia</h2>
+            <div class="hero-ctas">
+                <a href="#produk" class="cta-button primary">Lihat Produk</a>
+                <a href="#sejarah" class="cta-button secondary">Pelajari Lebih Lanjut</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="tentang" class="about-us-section container">
+        <h2 data-aos="fade-up">Filosofi Kami</h2>
+        <div class="philosophy-points">
+            <div class="philosophy-card" data-aos="fade-right">
+                <i class="fas fa-leaf"></i>
+                <h3>100% Organik</h3>
+                <p>Teh hitam premium yang dipetik langsung dari perkebunan terpilih di dataran tinggi Indonesia, tanpa bahan kimia berbahaya.</p>
+            </div>
+            <div class="philosophy-card" data-aos="fade-left">
+                <i class="fas fa-heart"></i>
+                <h3>Dipetik dengan Kasih</h3>
+                <p>Setiap daun teh dipetik dengan tangan oleh petani berpengalaman, menjaga kualitas dan kesegaran maksimal untuk Anda.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="produk" class="product-showcase container">
+        <h2 data-aos="fade-up">Produk Kami</h2>
+        <div class="product-grid-single">
+            <div class="product-card-featured" data-aos="fade-up" data-product-name="Toko Teko Black Tea">
+                <div class="product-images">
+                    <img src="images/product-1.jpg" alt="Toko Teko Black Tea" class="main-product-img">
+                </div>
+                <div class="product-info">
+                    <h3>Toko Teko Black Tea</h3>
+                    <p class="product-subtitle">Premium Organic Tea</p>
+                    <p class="description">Black tea premium dari perkebunan organik terbaik Indonesia. Dengan aroma khas yang menenangkan dan rasa yang kaya, setiap tegukan menghadirkan pengalaman minum teh yang autentik dan menyegarkan.</p>
+                    
+                    <div class="product-features">
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>100% Organik</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Tanpa Bahan Kimia</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Dipetik Manual</span>
+                        </div>
+                    </div>
+                    
+                    <button class="cta-button primary buy-button">Beli Sekarang</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sejarah" class="history-education-section">
+        <div class="container content-wrapper">
+            <div class="history-text" data-aos="fade-right">
+                <h2>Sejarah Teh: Perjalanan Menemukan Ketenangan</h2>
+                <p>Sejarah teh adalah perjalanan menemukan ketenangan. Dari pucuk daun segar yang dipetik dengan ketulusan, kami menghadirkan kembali tradisi minum teh sebagai momen untuk melambat di tengah kesibukan.</p>
+                
+                <p style="margin-top: 20px;">Nikmati kehangatan dan aroma alami yang menyeimbangkan tubuh dan pikiran. Setiap tegukan adalah undangan untuk berhenti sejenak, merasakan kehadiran diri, dan menemukan kedamaian dalam kesederhanaan.</p>
+                
+                <p style="margin-top: 20px;">Teh kami berasal dari perkebunan warisan di dataran tinggi Nusantara, dipetik dengan tangan penuh kasih, dan diproses dengan metode tradisional yang telah terbukti menghasilkan kualitas terbaik selama berabad-abad.</p>
+                
+                <div class="key-facts">
+                    <div class="fact-item"><i class="fas fa-spa"></i><span>Ketenangan Alami</span></div>
+                    <div class="fact-item"><i class="fas fa-heart"></i><span>Dipetik dengan Ketulusan</span></div>
+                    <div class="fact-item"><i class="fas fa-balance-scale"></i><span>Menyeimbangkan Tubuh & Pikiran</span></div>
+                </div>
+            </div>
+            <div class="history-image" data-aos="fade-left">
+                <img src="images/tea-ceremony.jpg" alt="Tradisi Teh">
+            </div>
+        </div>
+    </section>
+
+    <section id="galeri" class="gallery-section container">
+        <h2 data-aos="fade-up">Galeri Kami</h2>
+        <div class="gallery-grid">
+            <img src="images/history.jpg" alt="Sejarah Teh" class="gallery-item" data-aos="zoom-in" data-aos-delay="100">
+            <img src="images/tea-ceremony.jpg" alt="Upacara Teh" class="gallery-item" data-aos="zoom-in" data-aos-delay="200">
+            <img src="images/farmers.jpg" alt="Petani Teh" class="gallery-item" data-aos="zoom-in" data-aos-delay="300">
+            <img src="images/tea-leaves.jpg" alt="Daun Teh Segar" class="gallery-item" data-aos="zoom-in" data-aos-delay="400">
+        </div>
+    </section>
+
+    <section id="kontak" class="contact-cta-section">
+        <div class="container">
+            <h2 data-aos="fade-up">Hubungi Kami</h2>
+            <p data-aos="fade-up" data-aos-delay="100">Ada pertanyaan atau ingin memesan? Hubungi kami langsung via WhatsApp!</p>
+            <a href="https://wa.me/6281222177060?text=Halo%20Toko%20Teko,%20saya%20ingin%20bertanya%20tentang%20produk%20Anda" target="_blank" class="cta-button primary wa-cta" data-aos="fade-up" data-aos-delay="200">
+                <i class="fab fa-whatsapp"></i> Chat via WhatsApp
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-col" data-aos="fade-up">
+                <h4>Toko Teko</h4>
+                <p class="slogan">Premium Black Tea - Organic & Authentic</p>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/_tokoteko?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://wa.me/6281222177060" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <div class="footer-col" data-aos="fade-up" data-aos-delay="100">
+                <h4>Menu</h4>
+                <ul>
+                    <li><a href="#produk">Produk</a></li>
+                    <li><a href="#sejarah">Tentang Kami</a></li>
+                    <li><a href="#galeri">Galeri</a></li>
+                    <li><a href="https://wa.me/6281222177060">Kontak</a></li>
+                </ul>
+            </div>
+            <div class="footer-col" data-aos="fade-up" data-aos-delay="200">
+                <h4>Hubungi Kami</h4>
+                <p><i class="fas fa-map-marker-alt"></i> Bandung, Jawa Barat, Indonesia</p>
+                <p><i class="fas fa-phone-alt"></i> +62 812 2217 7060</p>
+                <p><i class="fab fa-whatsapp"></i> <a href="https://wa.me/6281222177060" style="color: #ccc;">WhatsApp Kami</a></p>
+            </div>
+        </div>
+        <div class="footer-bottom container">
+            <p>&copy; 2025 Toko Teko. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"></script>
+    
+    <script src="script.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true,
+        });
+    </script>
+</body>
+</html>
